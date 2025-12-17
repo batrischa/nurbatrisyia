@@ -1,0 +1,122 @@
+/* STYLE for MY WEBPAGE */
+a {  text-decoration:none; }
+
+body {
+  background-color:#FCE7DD; 
+  margin:0;
+  padding:0;
+}
+
+.navbar {
+  position: fixed;
+  padding:15px; 
+  background:#4B0E12;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navdiv {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo {
+  font-size:25px;
+  font-weight:600;
+  color:white;
+  margin-left:55px;
+}
+
+.navbar ul li {
+  list-style:none;
+  display: inline-block;
+  margin-right:45px;
+  position:relative;
+}
+
+ul li a {
+  color:white;
+  font-family: "Playfair Display", serif;
+  font-size:20px;
+  font-weight:bold;
+  position:relative;
+}
+
+ul li ul.dropdown {
+  display:none;
+  position:absolute;
+  background-color:#9B3053;
+  z-index:1;
+  border-radius:5px; 
+}
+
+ul li ul.dropdown li {
+  padding:10px;
+  color:white;
+}
+
+ul li:hover ul.dropdown {
+  display:block;
+  padding:5px;
+}
+
+ul li ul.dropdown li a {
+  display:flex;         
+  align-items:center;   
+  gap:6px;              
+  color:white;
+  padding:2px;
+
+}
+
+ul li ul.dropdown li a:hover {
+  color:#FFF4E9; 
+}
+
+ul li a:hover { 
+  color:#FFF4E9; 
+}
+
+ul li a::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-10px;
+  height:5px;
+  width:100%;
+  background:#FFF4E9;
+  transform:scaleX(0); 
+  border-radius:5px;
+  transition:transform 0.2s linear;
+}
+
+ul li a:hover::after {
+  transform:scaleY(1);
+}
+
+.fa-house, .fa-briefcase, .fa-images {
+  font-size:20px;
+  margin-right:8px;
+} 
+
+.fa-caret-down {
+  font-size:20px;
+  margin-left:8px;
+}
+ 
+ul li .fa-user, .fa-brain, .fa-people-roof, .fa-graduation-cap {
+  font-size:20px;
+}
+
+footer {
+  background-color:#B03060;
+  color:#F7DDE2;
+  font-weight:bold;
+  margin:auto;
+  clear:both;
+  text-align:center;
+  padding:5px;
+} 
