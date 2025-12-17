@@ -1,0 +1,633 @@
+<html>
+<head>
+
+<title>SKILLS</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Meie+Script&family=Pangolin&display=swap" rel="stylesheet">
+
+
+<style>
+a { text-decoration: none; }
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #f4f4f4;
+  --paper-color: #fff;
+  --line-color: #add8e6; 
+  --clip-color: silver;
+  --sticky-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.skills-section {
+  top: 30px;
+  max-width: 1000px;
+  margin: 100px auto;
+  position: relative; 
+  display: block; 
+}
+
+.lined-paperOne{
+  background-color: var(--paper-color);
+  box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-height: 1100px;
+  position: relative; 
+  background-image: repeating-linear-gradient(
+   var(--paper-color) 0px, 
+   var(--paper-color) 24px, 
+   var(--line-color) 25px, 
+   var(--line-color) 26px
+  );
+  background-size: 100% 26px;
+  background-position: 0 20px;
+  padding-left: 315px;
+  padding-bottom: 20px; 
+}
+
+.lined-paperOne::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 900px;
+  width: 2px;  
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.lined-paperOne h1 {
+  font-family: "Meie Script", cursive;
+  font-size: 50px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+.otherOne::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 155px;
+  height: 55px;
+  background: repeating-linear-gradient(45deg,
+    pink 0px,
+    pink 10px,
+    white 0px,
+    white 15px
+    );
+  opacity: 0.97;
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+
+.otherOne {
+  width: 630px;
+  height: 330px;
+  margin-top: 0px;
+  margin-left: -115px;
+  border-radius: 15px;
+  background-color: #4B0E12;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(-1deg)
+}
+
+.otherOne caption {
+  color: white;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.soft-table {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto; 
+}
+
+.soft-table th {
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #5A0A14;
+  padding: 11px ;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+.soft-table td {
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #4B0E12;
+  text-align: center;
+  padding: 11px;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+.otherTwo::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -45px;
+  width: 175px;
+  height: 55px;
+  background: repeating-linear-gradient(45deg,
+    #4B0E12 0px,
+    #4B0E12 5px,
+    white 3px,
+    white 10px
+    );
+  opacity: 0.95;
+  transform: rotate(20deg);
+  z-index: 2;
+}
+
+.otherTwo {
+  width: 850px;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: -230px;
+  border-radius: 15px; 
+  background-color: #D8A7A7;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(1deg); 
+}
+
+.otherTwo caption {
+  color: #4B0E12;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.hard-table {
+  width: 90%
+  overflow: hidden;
+  margin: 0 auto;
+  border-collapse: collapse;    
+}
+
+.hard-table th {
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: white;
+  padding: 10px;
+  font-size: 11px;
+  border: 10px solid #D8A7A7; 
+}
+
+.hard-table td {
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #4B0E12;
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+  border: 10px solid #D8A7A7;
+} 
+
+.sentences {
+  font-family: "Homemade Apple", cursive; 
+  font-size: 20px;
+  color: solid black;
+  position: relative;
+  max-width: 1000px;
+  line-height: 1.6;
+}
+
+.sentences .p1 {
+  margin-top: -15px;
+  margin-left: -270px;
+
+}
+
+.sentences .p2 {
+  margin-top: 30px;
+  margin-left: -270px;
+
+}
+
+.sentences b {
+  color: #5A0A14;
+  text-decoration: underline wavy #D8A7A7; 
+}
+
+.soft-table tr:hover td, .hard-table tr:hover td {
+  background-color: #fdfd96 !important; 
+  transition: 0.2s;
+  transform: scale(1.0);
+}
+
+#contact {
+  padding-top: 45px;
+}
+
+.memo-wrapper {
+  display: flex;
+  gap: 40px;           
+  align-items: flex-start;
+  margin-top: -10px;
+}
+
+.contact-memo1 {
+  background-color: #fffbdf; 
+  width: 350px;
+  padding: 25px;
+  margin-top: 80px;
+  margin-left: 95px;
+  position: relative;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.1);
+  border-bottom-right-radius: 60px 5px; 
+}
+
+.tape1 {
+  position: absolute;
+  top: -20px;
+  left: 30%;
+  width: 140px;
+  height: 40px;
+  background: rgba(216, 167, 167, 0.6);
+  backdrop-filter: blur(2px);
+  transform: rotate(2deg);
+  border-left: 2px dashed rgba(255,255,255,0.4);
+  border-right: 2px dashed rgba(255,255,255,0.4);
+}
+
+h2 {
+  font-family: "Meie Script", cursive;
+  color: #5A0A14;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+.intro-text {
+  font-family: "Homemade Apple", cursive; 
+  color: #4B0E12;
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  font-family: "Pangolin", cursive;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4B0E12;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contact-item i {
+  font-size: 25px;
+  margin-right: 15px;
+  color: #D8A7A7;
+}
+
+.contact-item:hover {
+  background-color: rgba(216, 167, 167, 0.2);
+  transform: translateX(10px);
+}
+
+.footer-note {
+  font-family: "Homemade Apple", cursive; 
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #888;
+  border-top: 1px dashed #ccc;
+  padding-top: 15px;
+}
+
+.contact-memo2 {
+  background-color: #fffbdf; 
+  width: 350px;
+  padding: 25px;
+  top: 130px;
+  position: relative;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.1);
+  border-bottom-right-radius: 60px 5px; 
+}
+
+.tape2 {
+  position: absolute;
+  top: -20px;
+  left: 30%;
+  width: 140px;
+  height: 40px;
+  background: rgba(216, 167, 167, 0.6);
+  backdrop-filter: blur(2px);
+  transform: rotate(2deg);
+  border-left: 2px dashed rgba(255,255,255,0.4);
+  border-right: 2px dashed rgba(255,255,255,0.4);
+}
+
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.form input, .form textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #EAB9C6;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: 'Pangolin', cursive;
+  font-size: 14px;
+  color: #4B0E12;
+  box-sizing: border-box; 
+}
+
+.form input:focus .form textarea:focus {
+  margin-bottom: 10px;
+  outline: none;
+  background: #fff;
+  border-color: #5A0A14;
+}
+
+.send-btn {
+  background-color: #4B0E12;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Pangolin', cursive;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #D8A7A7;
+  color: #4B0E12;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 400px) {.contact-memo { width: 85%; padding: 20px; }}
+.contact-animated { opacity: 0; }
+
+@keyframes memoPopIn {
+  from {
+   opacity: 0;
+   transform: scale(0.8) rotate(-5deg); 
+  }
+  to {
+   opacity: 1;
+   transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes memoPopInAlternative {
+  from {
+   opacity: 0;
+   transform: scale(0.8) rotate(5deg); 
+  }
+  to {
+   opacity: 1;
+   transform: scale(1) rotate(0deg);
+  }
+}
+
+.memo-1 {
+  animation: memoPopIn 0.8s ease-out forwards;
+  animation-delay: 0.1s; 
+}
+
+.memo-2 {
+  animation: memoPopInAlternative 0.8s ease-out forwards;
+  animation-delay: 0.3s; 
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+ <div class="navdiv">
+ <div class="logo"><font color="#EAB9C6">Cahaya's</font> Journey</div>
+ <span id="realTimeClock" style="color: #EAB9C6; font-size: 16px; margin-left: -190px; margin-bottom: -10px; font-weight: bold"></span>
+  <ul> 
+     <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+     <li><a href="#">About<i class="fa-solid fa-caret-down"></i></a>
+  <ul class="dropdown">
+     <li><a href="me.html"><i class="fa-solid fa-user"></i>Me</a></li>
+     <li><a href="edu.html"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
+     <li><a href="skills.html"><i class="fa-solid fa-brain"></i>Skills</a></li>
+     <li><a href="family.html"><i class="fa-solid fa-people-roof"></i>Family</a></li>
+  </ul>
+     <li><a href="work.html"><i class="fa-solid fa-briefcase"></i></i>Work Experience</a></li>
+     <li><a href="gallery.html"><i class="fa-solid fa-images"></i></i>Gallery</a></li>
+     <li><a href="skills.html#contact"></i>Contact</a></li>
+  </ul>
+ </div>
+</nav>
+
+<section class="skills-section">
+<div class="lined-paperOne">
+ <h1>My Power-Ups</h1>
+
+<div class="sentences">
+   <p class="p1">Whether in the digital world or real life, I am always trying to improve myself step by step. Below are the skills and strengths I have developed throughout my learning journey, both <b>soft</b> skills and <b>hard</b> skills.</p>
+
+ <div class="otherOne">
+   <table class="soft-table">
+     <thead>
+     <caption>--SOFT SKILLS--</caption>
+           <tr>
+              <th style="background-color:#D8A7A7;">SKILLS</th>
+              <th style="background-color:#fff9f0;">1</th>
+              <th style="background-color:#F8E1E0;">2</th>
+              <th style="background-color:#fff9f0;">3</th>
+              <th style="background-color:#F8E1E0;">4</th>
+              <th style="background-color:#fff9f0;">5</th>
+           </tr>
+     </thead>
+
+     <tbody>
+           <tr>
+              <td style="background-color:#D8A7A7;">COMMUNICATION</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;"></td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+
+           <tr>
+              <td style="background-color:#D8A7A7;">TEAMWORK</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+           </tr>
+
+           <tr>
+              <td style="background-color:#D8A7A7;">PROBLEM-SOLVING</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+
+           <tr>
+              <td style="background-color:#D8A7A7;">CREATIVITY</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+              <td style="background-color:#F8E1E0;">&#11088;</td>
+              <td style="background-color:#fff9f0;">&#11088;</td>
+           </tr>
+     </tbody>
+   </table>
+ </div>
+
+ <div class="otherTwo">
+   <table class="hard-table">
+     <thead>
+     <caption>--HARD SKILLS--</caption>  
+           <tr> 
+              <th style="background-color:#4B0E12;">SKILLS</th> 
+	      <th style="background-color:#4B0E12;">BEGINNER</th> 
+              <th style="background-color:#4B0E12;">INTERMEDIATE</th> 
+	      <th style="background-color:#4B0E12;">COMPETENT</th> 
+	      <th style="background-color:#4B0E12;">ADVANCED</th> 
+	      <th style="background-color:#4B0E12;">EXPERT</th> 
+	   </tr>
+     </thead>
+     <tbody>
+           <tr>
+              <td style="background-color:#F8E1E0;">HTML & CSS</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;"></td>
+              <td style="background-color:#fff9f0;"></td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+
+           <tr>
+              <td style="background-color:#F8E1E0;">CAPCUT & PREMIRE PRO</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;"></td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+
+
+           <tr>
+              <td style="background-color:#F8E1E0;">MICROSOFT WORD, POWERPOINT & EXCEL</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;"></td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+
+           <tr>
+              <td style="background-color:#F8E1E0;">CANVA</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;">&#10004;</td>
+              <td style="background-color:#fff9f0;"></td>
+           </tr>
+     </tbody>
+   </table>
+ </div>
+   <p class="p2">What you see here reflects the effort I’ve put into my journey so far. However, I don’t want to stop here. I’m always looking for opportunities to level up and learn new things through hands-on experience in the future.</p>
+</div>
+</div>
+
+<div id="contact" class="memo-wrapper">
+  <div class="contact-memo1 contact-animated memo-1">
+    <div class="tape1"></div>
+    <h2>Contect Me</h2>
+    <p class="intro-text">Don’t be shy—feel free to reach out if you’d like to connect or chat!</p>
+
+    <div class="contact-links">
+      <a href="mailto:nurbatrischa07@gmail.com" class="contact-item">
+        <i class="fa-solid fa-envelope-open-text"></i>
+        <span>nurbatrischa07@gmail.com</span>
+      </a>
+      <a href="https://wa.me/60173037116" class="contact-item">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Hit me up on WhatsApp anytime!</span>
+      </a>
+      <a href="https://www.instagram.com/imfinalho_?igsh=MTJlamliZnJuNXlmaA==" class="contact-item">
+        <i class="fa-brands fa-instagram"></i>
+        <span>@myBab4yBear</span>
+      </a>
+    </div>
+
+    <div class="footer-note">
+      <p>Thank you so much for taking the time to visit my website. I truly appreciate it!</p>
+    </div>
+  </div>
+
+  <div class="contact-memo2 contact-animated memo-2">
+    <div class="tape2"></div>
+    <div class="form">
+     <p style="font-family:'Homemade Apple', cursive; font-size:18px; color:#5A0A14;">Leave me a little note &#9829;</p>
+   <form action="https://api.sheetmonkey.io/form/9hePpqy4zLg78jkwAoU5S5" method="post">
+     <input type="text" name="Name" placeholder="Your name here..." required><br><br>
+     <textarea rows="3" name="Message" placeholder="Write your message here..." required></textarea><br><br>
+     <button class="send-btn">Send it! <i class="fa-solid fa-paper-plane"></i></button>
+   </form>
+  </div>
+ </div>
+</div>
+</section>
+
+<footer>
+  <marquee scrollamount="10" >&copy;Cahaya. All Rights Reserved</marquee>
+</footer>
+
+<script>
+ function updateClock() {
+ const now = new Date();
+ const options = { 
+  year: 'numeric', 
+  month: '2-digit', 
+  day: '2-digit', 
+  hour: '2-digit', 
+  minute: '2-digit', 
+  hour12: false 
+ };
+ const timeString = now.toLocaleTimeString('id-ID', options);   
+ document.getElementById('realTimeClock').textContent = timeString;
+}
+ updateClock();
+ setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>
