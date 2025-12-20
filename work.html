@@ -1,0 +1,269 @@
+<html>
+<head>
+
+<title>WORK EXPERIENCE</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lacquer&family=Meie+Script&display=swap" rel="stylesheet">
+
+<style>
+a { 
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #f4f4f4;
+  --paper-color: #fff;
+  --line-color: #add8e6; 
+  --clip-color: silver;
+  --sticky-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.work-section {
+  padding: 40px 10px;
+  max-width: 800px;
+  min-height: 500px;
+  margin: 100px 0 0 15px;
+  position: relative; 
+  display: block; 
+}
+
+.lined-paperOne {
+  background-color: var(--paper-color);
+  box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  min-height: 1000px; 
+  height: auto;
+  left: 7px;   
+  position: relative; 
+  background-image: repeating-linear-gradient(
+    var(--paper-color) 0px, 
+    var(--paper-color) 24px, 
+    var(--line-color) 25px, 
+    var(--line-color) 26px
+  );
+  background-size: 100% 26px;
+  background-position: 0 20px;
+  padding-left: 315px;
+  padding-bottom: 0px;
+}
+
+.lined-paperOne h1 {
+  font-family: "Meie Script", cursive;
+  font-size: 50px;
+  margin-top: -20px;
+  margin-left: -300px;
+}
+
+.firstP {
+  font-family: "Homemade Apple", cursive;
+  font-size: 16px;
+  line-height: 2.3; 
+  margin: -20px -10px 0px -290px; 
+  padding-right:7px;
+}
+
+.secondP {
+  font-family: "Homemade Apple", cursive;
+  font-size: 16px;
+  line-height: 2.3; 
+  margin: 20px -10px 0px -295px; 
+  padding-right:7px;
+}
+
+.thirdP {
+  font-family: "Homemade Apple", cursive;
+  font-size: 16px;
+  line-height: 2.3; 
+  margin: 18px -10px 15px -295px; 
+  padding-right:7px; 
+}
+
+.fourthP {
+  font-family: "Homemade Apple", cursive;
+  font-size: 16px;
+  line-height: 2.3; 
+  margin: 20px -10px 0 -295px; 
+  padding-right:7px; 
+}
+
+.firstP, .secondP, .thirdP, .fourthP {
+  position: relative; 
+  z-index: 20; 
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: -13px; 
+  left: 65%;
+  transform: translateX(-50%) rotate(-37deg);
+  width: 25px;
+  height: 70px; 
+  border: 5px solid var(--clip-color);
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 10; 
+}
+
+.lined-paperOne::before {
+  content: "";
+  position: absolute;
+  top: 50px; 
+  left: 450px; 
+  width: 100%;
+  height: 1000px;
+  background-color: var(--paper-color);
+  background-image: repeating-linear-gradient(
+    var(--paper-color) 0px, 
+    var(--paper-color) 24px, 
+    var(--line-color) 25px, 
+    var(--line-color) 26px
+  );
+  background-size: 100% 26px;
+  background-position: 0 20px;
+  transform: rotate(5deg); 
+  z-index: -1; 
+  border: 1px solid #eee;
+}
+
+.internVid video {
+  width: 350px;    
+  height: auto;
+  position: absolute; 
+  transform: rotate(3deg);
+  border: 20px solid black; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); 
+}
+
+.vid1 { top: 90px; left: 880px; }
+.vid2 { top: 320px; left: 868px; }
+.vid3 { top: 556px; left: 855px; }
+.vid4 { top: 790px; left: 843px; }
+
+.lined-paperOne b {
+  background-image: linear-gradient(120deg, #FFB7C5 0%, #FFB7C5 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in;
+  padding: 0 2px;
+  color: inherit;
+}
+
+.lined-paperOne b:hover {
+  background-size: 100% 88%; 
+  color: #4B0E12;
+}
+
+@keyframes paperFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes videoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px) rotate(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(3deg); 
+  }
+}
+
+.lined-paperOne h1  { animation: paperFadeIn 0.8s ease-out 0.1s forwards; opacity: 0; }
+.firstP  { animation: paperFadeIn 0.8s ease-out 0.3s forwards; opacity: 0; }
+.secondP { animation: paperFadeIn 0.8s ease-out 0.6s forwards; opacity: 0; }
+.thirdP  { animation: paperFadeIn 0.8s ease-out 0.9s forwards; opacity: 0; }
+.fourthP { animation: paperFadeIn 0.8s ease-out 1.2s forwards; opacity: 0; }
+
+.vid1 { animation: videoSlideIn 0.8s ease-out 0.5s forwards; opacity: 0; }
+.vid2 { animation: videoSlideIn 0.8s ease-out 0.8s forwards; opacity: 0; }
+.vid3 { animation: videoSlideIn 0.8s ease-out 1.1s forwards; opacity: 0; }
+.vid4 { animation: videoSlideIn 0.8s ease-out 1.4s forwards; opacity: 0; }
+
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+ <div class="navdiv">
+ <div class="logo"><font color="#EAB9C6">Cahaya's</font> Journey</div>
+ <span id="realTimeClock" style="color: #EAB9C6; font-size: 16px; margin-left: -180px; margin-bottom: -10px; font-weight: bold"></span>
+  <ul> 
+     <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+     <li><a href="#">About<i class="fa-solid fa-caret-down"></i></a>
+  <ul class="dropdown">
+     <li><a href="me.html"><i class="fa-solid fa-user"></i>Me</a></li>
+     <li><a href="edu.html"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
+     <li><a href="skills.html"><i class="fa-solid fa-brain"></i>Skills</a></li>
+     <li><a href="family.html"><i class="fa-solid fa-people-roof"></i>Family</a></li>
+  </ul>
+     <li><a href="work.html"><i class="fa-solid fa-briefcase"></i></i>Work Experience</a></li>
+     <li><a href="gallery.html"><i class="fa-solid fa-images"></i></i>Gallery</a></li>
+     <li><a href="skills.html#contact"></i>Contact</a></li>
+  </ul>
+ </div>
+</nav>
+
+ <section class="work-section">
+
+ <div class="lined-paperOne">
+  <h1>Hands-On Chapters</h1>
+  <p class="firstP">My internship at <b>"Pejabat Pendidikan Daerah Hulu Langat"</b> was my first work experience, where I got to experience the real working environment for the first time &#129336;. I was assigned <b>a variety of tasks</b>, such as managing correspondence, updating data in Excel, handling school transfer matters that involved communication with parents, and attending daily meetings</b>. This experience taught me not only technical skills and task management, but it also helped me gain self-confidence and professional communication skills &#127892;.</p> 
+  <p class="secondP">The internship was <b>highly enjoyable</b> due to the positive environment and the friendly, approachable attitude of all staff members. My fellow interns were also very easy to get along with, and we frequently ate lunch together. We even went on <b>“Nasi Ayam Hunting”</b> trips since I love chicken rice. Occasionally, officers and staff would generously treat us to meals like chicken rice &#127831;, Tealive drinks &#129380;, and bread &#129366;, which made the workplace feel welcoming and comfortable.</p>
+  <p class="thirdP">Although work was often busy and officers frequently went out to schools, they still <b>made time for leisure activities</b> such as Family Day &#128106; &#127995;, fun sports events &#127993;, and the weekly Yasin reading every Friday &#129330; &#127995;. These activities were not only enjoyable but also taught me the importance of balancing work responsibilities with social interactions within an organization.</p>
+  <p class="fourthP">Overall, this internship opened my eyes to the realities of the professional world &#127803;. It provided opportunities to learn, socialize, and build positive networks. This internship became a <b>meaningful starting point in my career journey</b>, where I learned to value professionalism, teamwork, and the sense of family within an organization.</p> 
+
+<div class="internVid">
+  <video class="vid1" controls>
+   <source src="kemaskini.mp4">
+  </video>
+  <video class="vid2" controls>
+   <source src="fail.mp4">
+  </video>
+  <video class="vid3" controls>
+   <source src="merdeka.mp4">
+  </video>
+  <video class="vid4" controls>
+   <source src="cop.mp4">
+  </video>
+</section>
+
+<footer>
+  <marquee scrollamount="10" >&copy; Cahaya. All Rights Reserved | Last updated: 20 December 2025</marquee>
+</footer>
+
+<script>
+ function updateClock() {
+ const now = new Date();
+ const options = { 
+  year: 'numeric', 
+  month: '2-digit', 
+  day: '2-digit', 
+  hour: '2-digit', 
+  minute: '2-digit',
+  second: '2-digit',  
+  hour12: false 
+ };
+ const timeString = now.toLocaleTimeString('id-ID', options);   
+ document.getElementById('realTimeClock').textContent = timeString;
+}
+ updateClock();
+ setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>

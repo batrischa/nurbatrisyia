@@ -1,0 +1,258 @@
+<html>
+<head>
+
+<title>FAMILY</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Meie+Script&display=swap" rel="stylesheet">
+
+<style>
+a { 
+  text-decoration:none;
+}
+
+body {
+  background-color:#4B0E12;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.gallery-section {
+  min-height: 1650px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: flex-start; 
+  padding: 50px 30px;     
+  color: white;
+}
+ 
+.gallery-section h1 {
+  margin-top:65px;
+  margin-bottom: 65px;   
+  font-family: 'Dancing Script', cursive; 
+  font-size: 3rem;
+  text-align: center;
+}
+
+.myPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;      
+  flex-wrap: wrap; 
+}
+
+.myPhoto img {
+  width: 100%;
+  height:215px;
+  object-fit:cover;
+} 
+
+.photo {
+  width: 215px;
+  background: white;
+  padding: 8px 8px 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.photo1 { transform: rotate(-6deg); z-index:1; }
+.photo2 { transform: rotate(3deg) translateY(-20px); z-index:2; }
+.photo3 { transform: rotate(-2deg); z-index:3; }
+.photo4 { transform: rotate(5deg) translateY(10px); z-index:4; }
+.photo5 { transform: rotate(-4deg); z-index:5; }
+.photo6 { transform: rotate(2deg) translateY(-15px); z-index:6; }
+.photo7 { transform: rotate(-6deg); z-index:1; }
+.photo8 { transform: rotate(3deg) translateY(-20px); z-index:2; }
+.photo9 { transform: rotate(-2deg); z-index:3; }
+.photo10 { transform: rotate(5deg) translateY(10px); z-index:4; }
+.photo11 { transform: rotate(-4deg); z-index:5; }
+.photo12 { transform: rotate(2deg) translateY(-15px); z-index:6; }
+.photo13 { transform: rotate(-6deg); z-index:1; }
+.photo14 { transform: rotate(3deg) translateY(-20px); z-index:2; }
+.photo15 { transform: rotate(-2deg); z-index:3; }
+.photo16 { transform: rotate(5deg) translateY(10px); z-index:4; }
+.photo17 { transform: rotate(-4deg); z-index:5; }
+.photo18 { transform: rotate(2deg) translateY(-15px); z-index:6; }
+
+.myPhoto div:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
+
+.zoom {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  transition: opacity 0.3s ease;
+}
+
+.zoom-content {
+  margin: auto;
+  display: block;
+  max-width: 75%;
+  max-height: 75%;
+  margin-top: 80px;
+  border: 5px solid white;
+  animation: zoomIn 0.3s ease-out;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #EAB9C6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.gallery-section h1 {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.myPhoto {
+  animation: fadeInUp 1s ease-out 0.2s forwards; 
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+ <div class="navdiv">
+ <div class="logo"><font color="#EAB9C6">Cahaya's</font> Journey</div>
+ <span id="realTimeClock" style="color: #EAB9C6; font-size: 16px; margin-left: -180px; margin-bottom: -10px; font-weight: bold"></span>
+  <ul> 
+     <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+     <li><a href="#">About<i class="fa-solid fa-caret-down"></i></a>
+  <ul class="dropdown">
+     <li><a href="me.html"><i class="fa-solid fa-user"></i>Me</a></li>
+     <li><a href="edu.html"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
+     <li><a href="skills.html"><i class="fa-solid fa-brain"></i>Skills</a></li>
+     <li><a href="family.html"><i class="fa-solid fa-people-roof"></i>Family</a></li>
+  </ul>
+     <li><a href="work.html"><i class="fa-solid fa-briefcase"></i></i>Work Experience</a></li>
+     <li><a href="gallery.html"><i class="fa-solid fa-images"></i></i>Gallery</a></li>
+     <li><a href="skills.html#contact"></i>Contact</a></li>
+  </ul>
+ </div>
+</nav>
+
+<section class="gallery-section">
+<h1>A glimpse into my moments</h1>
+<div class="myPhoto">
+  <div class="photo photo1"><img src="bb3.jpg"></div>
+  <div class="photo photo2"><img src="bb4.jpg"></div>
+  <div class="photo photo3"><img src="bb5.jpg"></div>
+  <div class="photo photo4"><img src="bb6.jpg"></div>
+  <div class="photo photo5"><img src="family1.jpg"></div>
+  <div class="photo photo6"><img src="family2.jpg"></div>
+  <div class="photo photo1"><img src="family3.jpg"></div>
+  <div class="photo photo2"><img src="family4.jpg"></div>
+  <div class="photo photo3"><img src="cousin1.jpg"></div>
+  <div class="photo photo4"><img src="cousin2.jpg"></div>
+  <div class="photo photo5"><img src="cousin3.jpg"></div>
+  <div class="photo photo6"><img src="cousin4.jpg"></div>
+  <div class="photo photo3"><img src="uni1.jpg"></div>
+  <div class="photo photo4"><img src="uni2.jpg"></div>
+  <div class="photo photo5"><img src="uni3.jpg"></div>
+  <div class="photo photo6"><img src="uni4.jpg"></div>
+  <div class="photo photo3"><img src="me6.jpg"></div>
+  <div class="photo photo4"><img src="me5.jpg"></div>
+  <div class="photo photo5"><img src="me4.jpg"></div>
+  <div class="photo photo6"><img src="me3.jpg"></div>
+</div>
+
+<div id="photozoom" class="zoom">
+  <span class="close">&times;</span>
+  <img class="zoom-content" id="fullImage">
+</div>
+</section>
+
+<footer>
+  <marquee scrollamount="10" >&copy; Cahaya. All Rights Reserved | Last updated: 20 December 2025</marquee>
+</footer>
+
+<script>
+ function updateClock() {
+ const now = new Date();
+ const options = { 
+  year: 'numeric', 
+  month: '2-digit', 
+  day: '2-digit', 
+  hour: '2-digit', 
+  minute: '2-digit',
+  second: '2-digit', 
+  hour12: false 
+ };
+ const timeString = now.toLocaleTimeString('id-ID', options);   
+ document.getElementById('realTimeClock').textContent = timeString;
+}
+ updateClock();
+ setInterval(updateClock, 1000);
+
+
+const zoom = document.getElementById("photozoom");
+const fullImg = document.getElementById("fullImage");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+const images = document.querySelectorAll(".photo img");
+
+images.forEach(img => {
+  img.onclick = function() {
+    zoom.style.display = "block";
+    fullImg.src = this.src; 
+  }
+});
+
+closeBtn.onclick = function() {
+  zoom.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == zoom) {
+    zoom.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
